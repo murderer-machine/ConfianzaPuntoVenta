@@ -1,0 +1,5 @@
+node_modules/
+nbproject/
+vendor/
+public/documentos_subidos/certificados_pv/
+.DS_Store

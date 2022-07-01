@@ -1,0 +1,84 @@
+@import "~bootstrap/scss/bootstrap";
+@import "variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+    font-family: "Roboto", sans-serif !important;
+    background-color: #ededed;
+}
+* {
+    box-shadow: none;
+    outline: none !important;
+}
+// Mui
+/* input */
+.MuiAppBar-colorPrimary {
+    color: inherit;
+    background-color: $color_principal !important;
+}
+.MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+    border-color: $color_principal !important;
+    border-width: 1px !important;
+}
+.MuiOutlinedInput-root.Mui-error .MuiOutlinedInput-notchedOutline {
+    border-color: $color_error !important;
+}
+.MuiInputLabel-root {
+    color: $color_principal !important;
+}
+.MuiInputLabel-root.Mui-error {
+    color: $color_error !important;
+}
+/*button*/
+.btn-principal {
+    background-color: $color_principal !important;
+    border-width: 0px !important;
+    color: #fff !important;
+}
+.btn-principal.Mui-disabled {
+    background-color: rgba($color: $color_principal, $alpha: 0.8) !important;
+}
+.btn-eliminar {
+    background-color: $color_error !important;
+    border-width: 0px !important;
+    color: #fff !important;
+}
+.btn-eliminar.Mui-disabled {
+    background-color: rgba($color: $color_error, $alpha: 0.8) !important;
+}
+/*checked*/
+.MuiCheckbox-root.Mui-checked {
+    color: $color_principal !important;
+}
+/*spienner*/
+.spinner_blanco {
+    color: #fff !important;
+}
+//Upload
+.upload_drag_click {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    border-width: 2px;
+    border-color: $color_principal;
+    border-style: dashed;
+    background-color: rgba($color: $color_principal, $alpha: 0.2);
+    justify-content: center;
+    align-items: center;
+    color: $color_principal;
+    font-weight: bold;
+    cursor: pointer;
+}
+.upload_drag_click.drag {
+    color: $color_blanco;
+    background-color: $color_principal;
+}
+.iconos_ {
+    width: 30px;
+    height: 30px;
+}
+.inicio_img_voucher {
+    height: 50px;
+}
+.react-pdf__Page__canvas {
+    margin: 0 auto;
+}

@@ -1,0 +1,20 @@
+@import "../../scss/variables.scss";
+.dropzone {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: $color_principal;
+    background-color: rgba($color: $color_principal, $alpha: 0.1);
+    color: $color_principal;
+    cursor: pointer;
+    font-weight: 700;
+}
+.dropzone.dropzone_error {
+    border-color: $color_error;
+    background-color: rgba($color: $color_error, $alpha: 0.1);
+    color: $color_error;
+}
